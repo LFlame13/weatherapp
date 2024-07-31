@@ -52,7 +52,7 @@ public class HelloController {
     void initialize() {
         getData.setOnAction(event -> {
             String getUserCity = city.getText().trim();
-            String apiKey = "7f4f5d7ca7b053930728a71a65e8cc78";
+            String apiKey = "OPENWEATHER_API_KEY";
             String apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + getUserCity + "&units=metric&APPID=" + apiKey;
             String output = getUrlContent(apiUrl);
             if(!output.isEmpty()) {
